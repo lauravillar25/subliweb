@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #000000;
+  font-family: "Delius Unicase", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+nav{
+
+  background-color: rgb(192, 218, 249)} 
+
+.container-fluid {
+
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;/* Espacio entre los elementos del menú */
+}
+
+nav a {
+  text-decoration: none;
+  color: #06090b;
+}
+
+.inicio {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.lista {
+  margin: 20px 0;
+  ;
+}
+
+footer {
+  background-color: #0e2134;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  margin: 0 10px;/* Espacio entre iconos de redes sociales */
+}
+
+h2 {
+  margin-top: 20px;/* Espacio por encima de los títulos */
+}
+
+/*formulario*/
+
+.container-main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 5px solid #170c3d;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Estilo del formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  /* Coloca los elementos en columnas */
+  gap: 15px; /* Espaciado entre los elementos */
+}
+.formulario-grupo {
+  display: flex;
+  flex-direction: column;  /* Coloca las etiquetas y campos de entrada en columnas */
+}
+
+label {
+  margin-bottom: 5px;
+  /* Espaciado debajo de la etiqueta */
+}
+
+
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Horarios */
+.formulario-horarios {
+  display: flex;
+  flex-direction: column;
+  /* Coloca los radio buttons en columnas */
+  gap: 5px;
+  /* Espaciado entre las opciones */
+}
+
+/* Personaliza la clase para el main */
+.main-servicios {
+  padding: 20px;
+  /* Espacio interno */
+  margin: 20px;
+  /* Espacio externo */
+  border: 2px solid #000000;
+  /* Borde */
+  background-color: #f9f9f9;
+  /* Color de fondo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra para resaltar el contenido */
+}
+
+/* Estilo para las secciones */
+.section-servicios {
+  padding: 15px;
+  /* Relleno interno */
+  margin: 10px 0;
+  /* Margen superior e inferior */
+  border: 1px solid #0066cc;
+  /* Borde de sección */
+  background-color: #ccd8eb;
+  /* Color de fondo */
+}
+
+.col-md-4 {
+
+  border: 2px solid #0066cc;
+  border-radius: 5px;
+  /* Esquinas redondeadas */
+  padding: 20px;
+  /* Espacio interno de los ítems */
+  text-align: center;
+}
+.grid {
+  background-color: lightblue;
+  /* Color de fondo para los ítems */
+  border: 2px 2px solid #0066cc;
+  /* Bordes en los ítems */
+  border-radius: 5px;
+  /* Esquinas redondeadas */
+  padding: 20px;
+  /* Espacio interno de los ítems */
+  text-align: center;
+  /* Centra el texto en los ítems */
+}
+
+.carousel-item {
+  width: 1400px;
+  height: 620px;
+  transition: none;
+  text-align: left;
+  line-height: 0px;
+  border-width: 0px;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 0px;
+}
+
+.card {
+  transition: transform 0.2s;
+  /* Efecto de transición al pasar el ratón sobre la tarjeta */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  /* Aumenta el tamaño de la tarjeta al pasar el ratón sobre ella */
+}
+
+.card-img-top {
+  border-radius: 0.5rem;/* Esquinas redondeadas para las imágenes */}
+  /* Reset de estilos generales */  
+
+  .grid-container {  
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */  
+    gap: 10px; /* Espacio entre los elementos */  
+    padding: 20px;  
+}  
+
+.grid-container img {  
+    width: 100%; /* Asegura que la imagen llene el contenedor */  
+    height: auto; /* Mantiene la proporción */  
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */  
+}  
+
+/* Opcional: Si quieres que todos los contenedores tengan la misma altura */  
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6, .grid-item7 .grid-item8 {  
+    overflow: hidden; /* Oculta el contenido que sobresale */  
+    position: relative;  
+    box-shadow: 5 20px 10px rgba(0, 0, 0, 0.2); /* Sombra */  
+    transition: transform 0.3s; /* Transición suave para el efecto hover */ 
+}  
+
+.grid-item1 img, .grid-item2 img, .grid-item3 img,  
+.grid-item4 img, .grid-item5 img, .grid-item6 img, .grid-item7 img  .grid-item7 img  {  
+    width: 100%;  
+    height: 100%; /* Asegura que ocupa todo el contenedor */  
+    object-fit: cover; /* Cubre el área del contenedor sin deformar */  
+
+}  
+
+.grid-item8 {  
+  grid-column: span 2; /* Hace que el item8 ocupe dos columnas */  
+} 
+
+.logo {  
+  max-width: 150px; /* Tamaño máximo del logo */  
+}  
+
+
+
+.navbar .nav-link {  
+  color: rgb(0, 0, 0) !important; /* Texto blanco para los enlaces */  
+}  
+
+.navbar .nav-link:hover {  
+  color: #237614 !important; /* Color dorado al pasar el ratón */  
+}  
+
+.section-servicios {  
+  background-color: #c4e5f0; /* Fondo azul claro */  
+  padding: 20px;  
+  border-radius: 10px; /* Esquinas redondeadas */  
+  margin-bottom: 20px; /* Espaciado entre secciones */  
+}  
+
+h1, h2 {  
+  color: #1E3A78; /* Color para los títulos */  
+}  
+
+.podcast {  
+  text-align: center; /* Centrando la sección del podcast */  
+}  
+/* Estilo opcional para la descripción del carrusel */  
