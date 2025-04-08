@@ -1,0 +1,251 @@
+
+* {  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+}  
+$primary-color: #007bff;  
+$primary-dark: #0056b3;  
+$secondary-color: #c4e5f0;  
+$foreground-color: #06090b;  
+$background-color: #f9f9f9;  
+$border-color: #0066cc;  
+$font-family-default: "Delius Unicase", serif;  
+$font-family-pacifico: "Pacifico", cursive;  
+$font-family-title: "Sour Gummy", sans-serif;
+body {  
+  color: #000000;  
+  font-family: $font-family-default;  
+  font-weight: 700;  
+  font-style: normal;  
+}  
+
+.pacifico-regular {  
+  font-family: $font-family-pacifico;  
+  font-weight: 400;  
+  font-style: normal;  
+}  
+
+.container-fluid {  
+  text-align: center;  
+}  
+
+nav {  
+  background-color: rgb(192, 218, 249);  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding: 0 20px;  
+
+  ul {  
+    list-style: none;  
+    display: flex;  
+    gap: 20px;  
+
+    a {  
+      text-decoration: none;  
+      color: $foreground-color;  
+    }  
+  }  
+}  
+
+.inicio {  
+  text-align: center;  
+  margin: 20px 0;  
+}  
+
+.lista {  
+  margin: 20px 0;  
+}  
+
+footer {  
+  background-color: #0e2134;  
+  text-align: center;  
+  padding: 20px 0;  
+
+  a {  
+    margin: 0 10px;  
+  }  
+}  
+
+h2 {  
+  margin-top: 20px;  
+}  
+
+/* formulario */  
+.container-main {  
+  max-width: 800px;  
+  margin: 20px auto;  
+  padding: 20px;  
+  border: 5px solid #170c3d;  
+  border-radius: 8px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}  
+
+.formulario {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 15px;  
+
+  .formulario-grupo {  
+    display: flex;  
+    flex-direction: column;  
+
+    label {  
+      margin-bottom: 5px;  
+    }  
+
+    textarea {  
+      padding: 10px;  
+      border: 1px solid #ccc;  
+      border-radius: 4px;  
+    }  
+  }  
+}  
+
+input[type="submit"] {  
+  padding: 10px;  
+  background-color: $primary-color;  
+  color: white;  
+  border: none;  
+  border-radius: 4px;  
+  cursor: pointer;  
+
+  &:hover {  
+    background-color: $primary-dark;  
+  }  
+}  
+
+/* Horarios */  
+.formulario-horarios {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 5px;  
+}  
+
+.main-servicios {  
+  padding: 20px;  
+  margin: 20px;  
+  border: 2px solid #000000;  
+  background-color: $background-color;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}  
+
+.section-servicios {  
+  padding: 15px;  
+  margin: 10px 0;  
+  border: 1px solid $border-color;  
+  background-color: #ccd8eb;  
+}  
+
+.col-md-4 {  
+  border: 2px solid $border-color;  
+  border-radius: 5px;  
+  padding: 20px;  
+  text-align: center;  
+}  
+
+.grid {  
+  background-color: lightblue;  
+  border: 2px solid $border-color;  
+  border-radius: 5px;  
+  padding: 20px;  
+  text-align: center;  
+}  
+
+.carousel-item {  
+  width: 1400px;  
+  height: 620px;  
+  transition: none;  
+  text-align: left;  
+  line-height: 0;  
+  border-width: 0;  
+  margin: 0;  
+  padding: 0;  
+  letter-spacing: 0;  
+  font-weight: 700;  
+  font-size: 0;  
+}  
+
+.card {  
+  transition: transform 0.2s;  
+
+  &:hover {  
+    transform: scale(1.05);  
+  }  
+}  
+
+.card-img-top {  
+  border-radius: 0.5rem;  
+}  
+
+.grid-container {  
+  display: grid;  
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 10px;  
+  padding: 20px;  
+
+  img {  
+    width: 100%;  
+    height: auto;  
+    object-fit: cover;  
+  }  
+}  
+
+.grid-item1,  
+.grid-item2,  
+.grid-item3,  
+.grid-item4,  
+.grid-item5,  
+.grid-item6,  
+.grid-item7,  
+.grid-item8 {  
+  overflow: hidden;  
+  box-shadow: 5px 20px 10px rgba(0, 0, 0, 0.2);  
+  transition: transform 0.3s;  
+
+  img {  
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+  }  
+}  
+
+.grid-item8 {  
+  grid-column: span 2;  
+}  
+
+.logo {  
+  max-width: 150px;  
+}  
+
+.navbar {  
+  .nav-link {  
+    color: rgb(0, 0, 0);  
+
+    &:hover {  
+      color: #237614;  
+    }  
+  }  
+}  
+
+.section-servicios {  
+  background-color: $secondary-color;  
+  padding: 20px;  
+  border-radius: 10px;  
+  margin-bottom: 20px;  
+}  
+
+h1,  
+h2 {  
+  font-family: $font-family-title;  
+  font-optical-sizing: auto;  
+  font-weight: 643;  
+  font-style: normal;  
+  font-variation-settings: "wdth" 100;  
+  color: #1E3A78;  
+}  
+
+.podcast {  
+  text-align: center;  
+}  
