@@ -9,10 +9,14 @@
     <script
     src="https://kit.fontawesome.com/29c3be7601.js"
     crossorigin="anonymous"></script>
+    <meta name="description" content="SUBLI.WEB - Personalización de productos como tazas, remeras y regalos únicos.">
+    <meta name="keywords" content="sublimación, productos personalizados, tazas, regalos, SUBLIWEB, diseño personalizado">
+    <meta name="author" content="Laura Villar">
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
 </head>
 <body>  
 <header><div class="text-center">
-  <img src="" alt="Logo de SUBLIWEB" class="logo mb-3">
+  <img src="../img/logo.png" alt="Logo de SUBLIWEB" class="logo mb-3">
 </div>
   <nav class="navbar navbar-expand-lg navbar-light">  
     <div class="container-fluid">
@@ -42,64 +46,69 @@
     </div>
 </nav> 
 </header> 
-  <main class="container-main">
-    <h1>CONTACTO</h1>
-    <form  class="formulario">
-      <fieldset>
-        <legend> <h2>Queremos conocerte!</h2></legend>
+<main class="container my-5 animate-fade-up">
+  <h1 class="text-center mb-4">CONTACTO</h1>
+  <form class="p-4 bg-white rounded shadow border border-primary-subtle">
 
+    <fieldset>
+      <legend class="mb-4"><h2 class="text-primary">¡Queremos conocerte!</h2></legend>
 
-        <div class="formulario-grupo">
-          <label for="nombre">Nombre/s</label> 
-          <input type="text" name=" nombre" id="nombre">
-          <label for="apellido"> Apellido/s</label>
-          <input type="text" name="apellido" id="apellido">
-          </div>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre/s</label>
+        <input type="text" class="form-control border-primary" id="nombre" name="nombre">
+      </div>
 
-        <div class="formulario-grupo">
-          <label for="email"> Mail</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="correo@corre.com"
-            required/> 
+      <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido/s</label>
+        <input type="text" class="form-control border-primary" id="apellido" name="apellido">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Mail</label>
+        <input type="email" class="form-control border-primary" id="email" name="email" placeholder="correo@correo.com" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="celular" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control border-primary" id="celular" name="celular">
+      </div>
+
+      <div class="mb-3">
+        <label for="genero" class="form-label">Género</label>
+        <select class="form-select border-primary" id="genero" name="genero">
+          <option value="Mujer">Mujer</option>
+          <option value="Hombre">Hombre</option>
+          <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">¿En qué horario podemos encontrarte?</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="horario" id="mañana" value="mañana">
+          <label class="form-check-label" for="mañana">7 a 12am</label>
         </div>
-
-        <div class="formulario-grupo">
-          <label for="celular">Telefono</label>
-          <input type="tel" name="celular" id="celular" />
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="horario" id="tarde" value="tarde">
+          <label class="form-check-label" for="tarde">1 a 5pm</label>
         </div>
-
-        <div class="formulario-grupo">
-          <label for="Genero">Genero</label> 
-          <select name="" id="">  
-            <option value="Mujer"> Mujer</option>
-            <option value="Hombre"> Hombre</option>
-            <option value="Prefiero no decirlo"> Prefiero no decirlo</option>
-          </select>
-          </div>
-
-        <div class="formulario-horarios">
-          <label for=">En que horario podemos encontarte?">En que horario podemos encontarte?</label>
-
-            7 a 12am<input type="radio" name="horario" id="contacto" /> 
-            1 a 5pm<input type="radio" name="horario" id="contacto" />
-            6 a 8pm<input type="radio" name="horario" id="contacto" />
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="horario" id="noche" value="noche">
+          <label class="form-check-label" for="noche">6 a 8pm</label>
         </div>
-        
-        <div class="formulario-grupo">
-          <label for="consulta" > Tines alguna consulta?</label>
-          
-          <textarea name="consulta"cols="60" rows="2"></textarea>          
-        </div>
+      </div>
 
-        <input type="submit" value="Enviar mensaje" />
+      <div class="mb-3">
+        <label for="consulta" class="form-label">¿Tienes alguna consulta?</label>
+        <textarea class="form-control border-primary" id="consulta" name="consulta" rows="3"></textarea>
+      </div>
 
-      </fieldset>
+      <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+    </fieldset>
 
-    </form>
-  </main>
+  </form>
+</main>
+
   <footer class="bg-light text-center py-3 mt-4">  
     <div class="redesSociales">  
         <a href="https://twitter.com" target="_blank" class="me-2"><i class="fa-brands fa-twitter"></i></a>  

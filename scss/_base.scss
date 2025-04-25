@@ -1,0 +1,26 @@
+
+@use 'variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fuente-principal;
+  background-color: $color-fondo;
+  color: $color-texto;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+.logo {
+  max-width: 150px;
+  height: auto;
+}

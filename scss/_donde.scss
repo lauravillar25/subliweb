@@ -1,0 +1,40 @@
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+  }
+  
+  .animated-entry {
+    animation: fadeInUp 1s ease-out both;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .logo {
+    transition: transform 0.4s ease-in-out;
+    &:hover {
+      transform: rotate(-5deg) scale(1.05);
+    }
+  }
+  
+  header {
+    background: linear-gradient(to right, #90caf9, #64b5f6);
+  }
+  
+  footer {
+    background: linear-gradient(to right, #0d47a1, #1976d2);
+  }
+  

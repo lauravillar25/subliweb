@@ -1,0 +1,15 @@
+
+@use 'variables' as *;
+
+header {
+  background: linear-gradient(135deg, $color-primario, $color-secundario);
+  color: white;
+  padding: 2rem 0;
+}
+
+footer {
+  background-color: $color-primario;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
