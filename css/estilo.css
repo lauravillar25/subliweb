@@ -1,3 +1,14 @@
+h1, h2, h3, h4, h5 {
+  font-family: "Neonderthaw", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +17,8 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #b4cdda;
-  color: #0d1b2a;
+  background-color: #ffffff;
+  color: #000000;
   overflow-x: hidden;
 }
 
@@ -23,17 +34,17 @@ img {
   height: auto;
 }
 
-header {
-  background: linear-gradient(135deg, #007bff, #6ec1e4);
-  color: white;
-  padding: 2rem 0;
+.nav-link {
+  color: rgb(224, 239, 248);
+}
+.nav-link:hover {
+  color: #e1fa02;
 }
 
-footer {
-  background-color: #007bff;
-  color: white;
+header {
+  background: linear-gradient(135deg, #007bff, #6ec1e4);
+  color: rgb(228, 211, 211);
   padding: 2rem 0;
-  text-align: center;
 }
 
 @keyframes fadeUp {
@@ -88,10 +99,6 @@ footer {
     transform: translateY(0);
   }
 }
-body {
-  background: linear-gradient(to bottom, #e3f2fd, #ffffff);
-}
-
 .animated-entry {
   animation: fadeInUp 1s ease-out both;
 }
@@ -109,12 +116,11 @@ body {
   transform: rotate(-5deg) scale(1.05);
 }
 
-header {
-  background: linear-gradient(to right, #90caf9, #64b5f6);
-}
-
 footer {
-  background: linear-gradient(to right, #0d47a1, #1976d2);
+  background: linear-gradient(to top, #080808, #007bff);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=estilo.css.map */

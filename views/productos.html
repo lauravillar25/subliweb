@@ -17,61 +17,48 @@
 </head>
 
 <body>
-    <header class="shadow-sm py-3" style="background: linear-gradient(to right, #90caf9, #64b5f6);">
-
-        <div class="text-center">
-            <img src="../img/logo.png" alt="logo" class="logo mb-3">
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">SUBLI.WEB</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contactos.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./dondeestamos.html">DONDE ESTAMOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./productos.html">PRODUCTOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./servicios.html">SERVICIOS</a>
-                        </li>
-                    </ul>
-                </div>
+    <header class="shadow-sm ">
+        <div class="navbar navbar-expand-lg navbar-light container">
+            <img src="../img/logo.png" alt="Logo de SUBLIWEB" class="logo mb-2">
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand text-white fw-bold" href="../index.html">SUBLI.WEB</a>
+            <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link " href="../index.html">INICIO</a></li>
+                <li class="nav-item"><a class="nav-link " href="./contactos.html">CONTACTO</a></li>
+                <li class="nav-item"><a class="nav-link  " href="./dondeestamos.html">DONDE ESTAMOS</a></li>
+                <li class="nav-item"><a class="nav-link " href="./productos.html">PRODUCTOS</a></li>
+                <li class="nav-item"><a class="nav-link " href="./servicios.html">SERVICIOS</a></li>
+              </ul>
             </div>
-        </nav>
+          </nav>
     </header>
-    <main class="container mt-5">
-        <h1 class="text-center">Catálogo de Productos</h1>
+    <main class="container">
+        <section class="lista">
+        
+        <div class="container mt-4"> 
+        <h1 class="text-center mb-4 fade-in">Catálogo de Productos</h1>
 
-        <div class="row mt-4">
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="../img/taza AAA.webp" class="card-img-top" alt="Taza AAA">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="card h-100">
+                    <img src="../img/taza AAA.webp" class="card-img-top img-fluid object-fit-cover" alt="Taza AAA">
                     <div class="card-body">
                         <h5 class="card-title">Taza AAA</h5>
                         <p class="card-text">Tazas de cerámica importadas, perfectas para sublimar con tu diseño.</p>
                         <a href="#" class="btn btn-primary">Agregar al Carrito</a>
                     </div>
                 </div>
-            </div>
+            
 
 
-            <div class="col-md-4 mb-4">
-                <div class="card">
+            <div class="col">
+                <div class="card h-100">
                     <img src="../img/jarro de cafe.webp"
-                        class="card-img-top" alt="Jarro de Café">
+                        class="card-img-top img-fluid object-fit-cover" alt="Jarro de Café">
                     <div class="card-body">
                         <h5 class="card-title">Jarro de Café</h5>
                         <p class="card-text">Jarro térmico de polímero con tapa, ideal para mantener tu bebida caliente.
@@ -80,32 +67,39 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="../img/botella termica sin fondo.jpg" class="card-img-top" alt="Botella Térmica">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/botella termica sin fondo.jpg" class="card-img-top img-fluid object-fit-cover" alt="Botella Térmica">
                     <div class="card-body">
                         <h5 class="card-title">Botella Térmica 500ml</h5>
                         <p class="card-text">Mantiene tus bebidas frías o calientes por más</p>
                             <a href="#" class="btn btn-primary">Agregar al Carrito</a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+        </section>
             
     </main>
-    <footer class="bg-light text-center py-3 mt-4">
-        <div class="redesSociales">
-            <a href="https://twitter.com" target="_blank" class="me-2"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.twitch.tv/" target="_blank" class="me-2"><i class="fa-brands fa-twitch"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" class="me-2"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <footer class="text-white text-center py-4 mt-5 animated-entry">
+        <div class="container">
+          <div class="mb-3">
+            <a href="https://twitter.com" target="_blank" class="text-white me-3"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.twitch.tv/" target="_blank" class="text-white me-3"><i class="fa-brands fa-twitch"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-white me-3"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="text-white"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <form class="row g-3">
+            <div class="col-12 col-md-6 mx-auto">
+              <input type="email" class="form-control" placeholder="Ingrese su email" required>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-outline-light">ENVIAR</button>
+            </div>
+          </form>
+          <h6 class="mb-0 text-center mt-4">&copy; SUBLI.WEB / VL 2025</h6>
         </div>
-        <form class="my-3" action="">
-            <input type="email" class="form-control mb-2" placeholder="Ingrese su email">
-            <button type="submit" class="btn btn-primary"><img src="" alt="logo enviar" /></button>
-        </form>
-        <h6 class="copy">&#169; SUBLI.WEB/VL2025</h6>
-    </footer>
-
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

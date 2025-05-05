@@ -1,5 +1,19 @@
 $color-primario: #007bff;
 $color-secundario: #6ec1e4;
-$color-fondo: #b4cdda;
-$color-texto: #0d1b2a;
+$color-fondo: #ffffff;
+$color-texto: #000000;
 $fuente-principal: 'Nunito', sans-serif;
+$fuente-titulos: 'Neonderthaw', cursive;
+h1, h2, h3, h4, h5 {
+    font-family: $fuente-titulos;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+$fuente-inicio: 'Poppins', sans-serif;
+
+
+.navbar-brand {
+  font-family: $fuente-inicio;
+}
+

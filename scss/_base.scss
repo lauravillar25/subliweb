@@ -24,3 +24,12 @@ img {
   max-width: 150px;
   height: auto;
 }
+
+.nav-link {
+  color: rgb(224, 239, 248); 
+
+  &:hover {
+    color: #e1fa02;
+  }
+}
+
